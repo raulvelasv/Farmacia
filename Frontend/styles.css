@@ -1,3 +1,4 @@
+/*estilos generales*/
 body {
     background-color: #0d2e4e;
     color: #ffffff;
@@ -90,6 +91,7 @@ button:hover {
         transform: scale(1);
     }
 }
+/*estilos de la tabla*/
 table {
     width: 100%;
     border-collapse: collapse;

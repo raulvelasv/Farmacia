@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src = "js.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Document</title>
+</head>
+<body onload="getPatients();getMedicines()">
+
+    <h1>Alta</h1>
+    <input type="text" name="idXip" id="idXip" placeholder="ID del xip">
+    <select id="seleccionPacientes">
+        <option value="" disabled selected hidden>Seleccionar paciente</option>
+    </select>
+    <select id="seleccionMedicinas">
+        <option value="" disabled selected hidden>Seleccionar medicina</option>
+    </select>
+    <label for="date">Fecha de vencimiento:</label>
+    <input type="date" name="fechaVencimiento" id="fechaVencimiento">
+    <div class="input-field button">
+        <input type="submit" value="Enviar" onclick="enviarRelease()">
+        <div class="alta"></div>
+    </div>
+    <div class="input-field button">
+        <input type="submit" value="Volver a gestión" onclick="gestion()">
+    </div>
+
+</body>
+</html>
+
